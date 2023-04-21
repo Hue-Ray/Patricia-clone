@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    body{
+        @apply font-[Poppins]
+    }
+    .nav-menu-link{
+        @apply mb-3
+    }
+}
+@layer utilities{
+    .btn{
+        @apply rounded-md text-center
+    }
+    .open-nav-menu{
+        display: block;
+    }
+    .close-nav-menu{
+        display: none;
+    }
+}
