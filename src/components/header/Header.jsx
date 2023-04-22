@@ -46,7 +46,7 @@ const closeNavMenu = () => {
                 </div>
                 </div>
                 <ul className='nav-menu text-[8px] mt-2'>
-                   <a href="#"><li className='nav-menu-link'>About Us</li></a>
+                   <a href="./about/Team"><li className='nav-menu-link'>About Us</li></a>
                    <a href="#"><li className='nav-menu-link'>product</li></a>
                    <a href="#"><li className='nav-menu-link'>Learn</li></a>
                    <a href="#"><li className='nav-menu-link'>Resources</li></a>
