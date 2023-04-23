@@ -1,11 +1,10 @@
-import './App.css'
-import Header from './components/header/Header'
-import HeroSection from './components/heroSection/HeroSection';
+import './App.css';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
     <div className="App">
-     <HeroSection />
+     <HomePage />
     </div>
   )
 }
