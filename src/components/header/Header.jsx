@@ -52,7 +52,7 @@ const closeNavMenu = () => {
                    <a href="#"><li className='nav-menu-link'>Resources</li></a>
                    <a href="#"><li className='nav-menu-link'>Careers</li></a>
                 </ul>
-               <div className='mt-[15%] text-[8px]'>
+               <div className='mt-[5%] text-[8px]'>
                <div className='btn border mb-2 w-fit p-2 text-green-600'><a href="#"> <button>Sign In</button></a></div>
                <div className='btn bg-yellow-500 w-fit p-2'><a href="#"> <button>Create Account</button></a></div>
                </div>
