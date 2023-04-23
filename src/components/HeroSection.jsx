@@ -1,49 +1,39 @@
 import React from 'react'
 import Header from './Header'
+import PlayStore from '../assets/play-store.svg'
+import AppStore from '../assets/app-store.svg'
+import HeroSideImg from '../assets/hero-side-img.png'
 
 function HeroSection() {
   return (
     <div className='bg-[url(./assets/hero-img.jpg)] 
-    bg-cover h-[70vh] w-[100hw]'>
+    bg-cover h-[70vh] md:h-[100vh] w-[100hw]'>
+      <img className='hero-side-img absolute top-[30%] left-[70%] rotate rotate-12 w-[25%] h-[75%] md:block' src={HeroSideImg} alt=''></img>
         <Header />
-        <section className='text-center p-4 flex-col'>
+        <section className='text-center p-4 flex-col mt-4'>
             <div>
-              <h1 className='text-white text-3xl font font-extrabold mb-5'>
+              <h1 className='text-white space  text-3xl font-extrabold md:text-5xl md:w-[420px] m-auto mb-5'>
                 The Only Crypto Solution You'll Ever Need
               </h1>
             </div>
            <div>
-             <p className='text-white text-[10px] mb-5'>
+             <p className='text-white text-[10px] mb-5 md:text-sm md:w-[420px] m-auto'>
               Join millions of people globally, 
               to buy and sell cryptocurrencies the
               secure and seamless way.
               </p>
            </div>
-           <div className=''> 
-              <button className='btn bg-white text-stone-500 mx-2 p-2 w-[120px]'>
-                <div className=''>
-                  <p className='text-[8px]'>
-                    GET IT ON
-                  </p>
-                  <p className='text-xs'>
-                    Google Play
-                  </p>
-                </div>
-              </button>
-              <button className='btn bg-white text-stone-500 p-2 w-[120px]'>
-                <div className=''>
-                  <p className='text-[8px]'>
-                    Download on the
-                  </p>
-                  <p className='text-xs'>
-                    App Store
-                  </p>
-                </div>
-              </button>
+            <div className='flex justify-center gap-2 '>
+              <div>
+                <img src={PlayStore} alt=''></img>
+              </div>
+              <div>
+                <img src={AppStore} alt=''></img>
+              </div>
             </div>
         </section>
     </div>
   )
 }
 
-export default HeroSection
+export default HeroSection;

@@ -4,7 +4,7 @@
 
 @layer base{
     body{
-        @apply font-[Poppins]
+        font-family: 'poppins';
     }
     .nav-menu-link{
         @apply mb-3
@@ -19,5 +19,11 @@
     }
     .close-nav-menu{
         display: none;
+    }
+    .hero-side-img{
+        @apply hidden
+    }
+    .line-h{
+        line-height: 20px;
     }
 }
