@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Header() {
 const openNavMenu = () => {  
@@ -46,7 +47,9 @@ const closeNavMenu = () => {
                 </div>
                 </div>
                 <ul className='nav-menu text-[8px] mt-2'>
-                   <a href="./about/Team"><li className='nav-menu-link'>About Us</li></a>
+                  <li className='nav-menu-link'>
+                    <Link to='/about/Team'>About Us</Link>
+                  </li>
                    <a href="#"><li className='nav-menu-link'>product</li></a>
                    <a href="#"><li className='nav-menu-link'>Learn</li></a>
                    <a href="#"><li className='nav-menu-link'>Resources</li></a>
