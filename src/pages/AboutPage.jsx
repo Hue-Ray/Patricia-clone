@@ -3,10 +3,9 @@ import Team from '../components/Team';
 
 function AboutPage() {
   return (
-    <div className='bg-[url(./assets/hero-img.jpg)] h-[70vh] w-[100%]'>
+    // <div className='bg-[url(./assets/about-background.jpg)] h-[60vh] w-[100%]'>
       <Team />
-      <h1>About Page</h1>
-    </div>
+    //</div>
   )
 }
 
