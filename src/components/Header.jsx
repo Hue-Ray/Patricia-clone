@@ -23,11 +23,11 @@ const closeNavMenu = () => {
         <header className=''>
            <div className='flex justify-between p-4 text-white'>
           <div>
-          <a href="#">
-                <p className='logo font-extrabold text-lg'>
-                    PATRICIA
-                </p>
-            </a>
+            <Link to='/'>
+              <p className='logo font-extrabold text-lg'>
+                PATRICIA
+              </p>
+            </Link>
            </div>
             <div className='cursor-pointer' onClick={openNavMenu}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -38,9 +38,11 @@ const closeNavMenu = () => {
           </div>
             <nav className='nav-menu absolute  top-0 bg-white w-[100%] h-[50%] p-4 close-nav-menu'>
                 <div className='flex justify-between'>
-                <div className='logo font-extrabold text-lg'>
-                    PATRICIA
-                </div>
+                <Link to='/'>
+                 <p className='logo font-extrabold text-lg'>
+                   PATRICIA
+                 </p>
+                </Link>
                 <div className='' onClick={closeNavMenu}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
