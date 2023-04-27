@@ -71,8 +71,8 @@ function Team() {
             </nav>
         </header>
 
-        <p className='text-center font-black text-4xl  pb-6'>Meet the Magicians</p>
-        <div className='Team h-32 flex justify-center relative -z-[1]'>
+        <p className=' text-center font-black text-4xl m-auto  pb-6'>Meet the Magicians</p>
+        <div className='Team h-32 flex justify-center relative -z-[1] mb-[70px]'>
           <img src={TeamImg} alt='patricia team' className='w-72 border-8 rounded-xl border-blue-200'></img>
         </div>
         <div className='Description bg-teal-800 h-52 w-[100%] text-white p-4 relative -z-[2] top-[-45px]'>
@@ -81,16 +81,16 @@ function Team() {
         </div>
       </div>
       <div>
-        <img src={MediaImg} alt='about media' className='mt-32 p-5'></img>
+        <img src={MediaImg} alt='about media' className='mt-[180px] p-5'></img>
       </div>
-      <div className='mt-20 text-center'>
+      <div className='mt-19 text-center'>
         <h2 className='font-black text-3xl mb-3'>Our History</h2>
         <p className='text-[12px]'>Take a Walk With Us Down Memory Lane.</p>
       </div>
       <div className='flex justify-center'>
         <div className='bg-cyan-100 mt-5 w-72 h-12 text-[13px] p-1 flex justify-between rounded-lg'>
           <p className='w-40 rounded-lg p-2  bg-white text-center'>What we have done</p>
-          <p className='text-center p-2'>Where we are</p>
+          <p className='text-center p-2 text-slate-400'>Where we are</p>
       </div>
       </div>
       <p className='text-xs p-10 mb-28'>We don't mean to brag, but we only take giant strides here. Led by our multi-award winning CEO & Founder, we've moved from: 2 to 350+ employees, 1 to 8+ locations, and 5k to 30k+ daily transactions. We launched Africa's first and only Bitcoin Debit card, bagged 5 different awards and was named Fourth Canvas' African Challenger Brands Top 20, all in four years.</p>
