@@ -5,7 +5,7 @@ import AboutPage from '../pages/AboutPage';
 function Header() {
 const openNavMenu = () => {  
   const mobileNav = document.querySelector(".nav-menu")
-  if (mobileNav.style.display === "none"){
+  if (mobileNav.style.display = "none"){
     mobileNav.style.display = "block";
   } else {
     mobileNav.style.display = "none";
@@ -14,7 +14,7 @@ const openNavMenu = () => {
 
 const closeNavMenu = () => {
   const mobileNav = document.querySelector(".nav-menu")
-  if (mobileNav.style.display === "block"){
+  if (mobileNav.style.display = "block"){
     mobileNav.style.display = "none";
   }
 }
@@ -36,7 +36,7 @@ const closeNavMenu = () => {
 
             </div>
           </div>
-            <nav className='nav-menu absolute  top-0 bg-white w-[100%] h-[50%] p-4 close-nav-menu'>
+            <nav className='nav-menu absolute  top-0 bg-white w-[100%] h-auto p-4 close-nav-menu'>
                 <div className='flex justify-between'>
                 <Link to='/'>
                  <p className='logo font-extrabold text-lg'>
