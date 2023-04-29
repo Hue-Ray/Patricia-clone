@@ -1,12 +1,13 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection'
 import Rocket from '../assets/rocket.png'
+import Logo from '../assets/visaextra-logo.svg';
 import TeamImg from '../assets/patricia-team.webp'
 import { Link } from 'react-router-dom'
 
 function HomePage() {
   return (
-    <div>
+    <div className='home'>
       <HeroSection />
       <section className='p-4 md:p-[6rem]'>
         <h1 className='text-3xl font-extrabold text-green-800 mb-4
@@ -35,7 +36,20 @@ function HomePage() {
         </div>
         <div className='relative bg-slate-400 w-[90%] m-auto  h-[50px] -mt-10 -z-10 rounded-lg'></div>
               <div className='relative bg-slate-800 w-[80%] m-auto  h-[50px] -mt-10 -z-20 rounded-lg'></div>
-       
+      </section>
+
+      <section className='bg-[#e7e7c1] mt-[4rem] flex-col  justify-center items-center w-screen h-fit p-4'>
+      <div className='earth'></div>
+        <div>
+          <h1 className='text-4xl font-bold text-green-800 mt-20'>Crypto Without The Clutter</h1>
+          <p className='text-xs line-h text-black opacity-40 mt-4'>
+          Ever imagined crypto being fun as well as functional? Well, we too have, and we have created Patricia to do just that. Come on board and experience crypto the redefined way.
+          </p>
+          <button className='btn bg-yellow-300 p-2 px-4 text-xs mt-2'>Get started for free</button>
+          <div className='mt-4'>
+            <img src={Logo}></img>
+          </div>
+        </div>
       </section>
     </div>
   )
