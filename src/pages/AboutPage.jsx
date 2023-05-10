@@ -85,8 +85,8 @@ function AboutPage() {
         </header>
 
         <p className=' text-center font-black text-4xl m-auto  pb-6'>Meet the Magicians</p>
-        <div className='Team h-32 flex justify-center absolute -z-[2] mb-[70px]'>
-          <img src={TeamImg} alt='patricia team' className='w-72 border-8 rounded-xl border-blue-200'></img>
+        <div className='Team h-[40%] flex justify-center relative -z-[2] mb-[70px] md:w-32 lg:w-48'>
+          <img src={TeamImg} alt='patricia team' className='w-[90%] border-8 rounded-xl border-blue-200'></img>
         </div>
         <div className='Description bg-teal-800 h-52 w-[100%] text-white p-4 absolute -z-[2] top-[260px]'>
           <h3 className='w-[50%] font-black text-3xl'>Who are Patricians?</h3>
@@ -175,8 +175,8 @@ function AboutPage() {
           </figure>
         </div>
       </div>
-      <div className='m-5'>
-        <p className='text-center font-extrabold text-[30px] mb-[10px]'>Our Departments</p>
+        <p className='text-center font-extrabold text-[30px] mt-[15px] mb-[10px]'>Our Departments</p>
+      <div className='m-5 p-4'>
         <div className='rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300'>
           <img src={Product} alt='Product Department' className='w-[40px] mb-[20px]'></img>
           <p className='text-[20px] font-bold text-neutral-700 mb-[10px]'>Product</p>
@@ -238,10 +238,17 @@ function AboutPage() {
           <p className='text-xs leading-relaxed text-neutral-600'>We are the face of financial transactions at Patricia, leveraging on the use of cutting-edge technologies to ensure swift payments, settlement and reconciliation.</p>
         </div>
       </div>
-      <div className='text-center p-2'>
+      <div className='text-center p-2 mb-[100px]'>
         <p className='text-[40px] font-extrabold'>Patrician's Thoughts</p>
         <p className='text-xs text-neutral-600 mt-[10px]'>Short stories of what it is to be a part of the Patricia team.</p>
       </div>
+      <div className='bg-orange-100 text-center m-3 p-6 rounded-xl'>
+        <p className='text-[35px] font-extrabold'>Want To Be A Magician?</p>
+        <p className='text-neutral-400 text-[11px] mt-[10px] mb-[15px] leading-loose'>Is your superpower creaing amazing ideas and bringing them to reality? Patricia is the perfect home for you. Let's make magic together.</p>
+        <button className='btn bg-yellow-300 p-2 px-4 text-xs mt-2'>Join our team</button>
+      </div>
+      <div className='relative bg-slate-200 w-[90%] m-auto  h-[35px] -mt-10 -z-10 rounded-lg'></div>
+      <div className='relative bg-slate-300 w-[80%] m-auto  h-[49px] -mt-10 -z-20 rounded-lg'></div>
     </div>
   )
 }
