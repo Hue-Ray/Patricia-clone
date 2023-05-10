@@ -41,15 +41,50 @@ function HomePage() {
       <section className='bg-[#e7e7c1] mt-[4rem] flex-col  justify-center items-center w-screen h-fit p-4'>
       <div className='earth'></div>
         <div>
-          <h1 className='text-4xl font-bold text-green-800 mt-20'>Crypto Without The Clutter</h1>
-          <p className='text-xs line-h text-black opacity-40 mt-4'>
+          <h1 className='heading text-green-800 mt-20'>Crypto Without The Clutter</h1>
+          <p className='text-[10px] line-h text-black opacity-60 mt-4'>
           Ever imagined crypto being fun as well as functional? Well, we too have, and we have created Patricia to do just that. Come on board and experience crypto the redefined way.
           </p>
-          <button className='btn bg-yellow-300 p-2 px-4 text-xs mt-2'>Get started for free</button>
+          <button className='btn bg-yellow-300 p-2 px-4 text-[10px] mt-2'>Get started for free</button>
           <div className='mt-4'>
             <img src={Logo}></img>
           </div>
         </div>
+      </section>
+
+      <section className='bg-emerald-900 text-white p-4'>
+        <p className='heading'>Your Gateway To Crypto</p>
+        <h6 className='description text-[10px] mt-4'>
+        More than creating a seamless platform for you to perform
+        crypto transactions, we are with you every step of the way,
+        providing you with tips and tricks to becoming a crypto guru
+        </h6>
+        <img className='transition-all rotate-45 w-[50px] -mt-3 ml-8' src={Rocket} alt='rocket'></img>
+      </section>
+
+      <section className='p-4'>
+       <div className='heading mt-4'>
+         <p className='text-green-800'>Crypto</p>
+        <p>Trading,</p>
+        <p>Simplified</p>
+       </div>
+       <div className='mt-4'>
+        <p className='text-[10px]'>Think lifting a feather is e!ortless? Try trading with
+            Patricia
+        </p>
+      </div>
+      <div className='box-shadow mt-4'>
+        <p className='text-[10px]'>Real time wallet value</p>
+      </div>
+      <div className='box-shadow'> 
+        <p className='text-[10px]'>Seamless Crypto transactions</p>
+      </div>
+      <div className='box-shadow'>
+        <p className='text-[10px]'>Real time Crypto values</p>
+      </div>
+      <div className='box-shadow'>
+        <p className='text-[10px]'>Crypto answers at your fingertips</p>
+      </div>
       </section>
     </div>
   )

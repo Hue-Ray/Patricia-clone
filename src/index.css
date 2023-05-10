@@ -50,4 +50,12 @@
             background-position-x: 30vh;
         }
     }
+
+    .heading{
+        @apply text-3xl font-bold
+    }
+
+    .box-shadow{
+        @apply rounded-[100px] p-4 mb-4 shadow-[0px_3px_5px_3px] shadow-neutral-300 text-center font-extrabold
+    }
 }
