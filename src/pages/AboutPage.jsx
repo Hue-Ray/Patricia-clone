@@ -110,20 +110,20 @@ function AboutPage() {
       <div className='bg-pink-100'>
         <ul className='flex justify-evenly'>
           <ul className='text-center '>
-            <li className='font-black text-emerald-900 text-[20px] mb-[10px]'>850K</li>
-            <li className='text-[9px] font-medium tracking-tighter'>Registered User Accounts</li>
+            <li className='value'>850K</li>
+            <li className='value-base'>Registered User Accounts</li>
           </ul>
           <ul className='text-center'>
-            <li className='font-black text-emerald-900 text-[20px] mb-[10px]'>10K</li>
-            <li className='text-[9px] font-medium tracking-tighter'>Daily active users</li>
+            <li className='value'>10K</li>
+            <li className='value-base'>Daily active users</li>
           </ul>
           <ul className='text-center'>
-            <li className='font-black text-emerald-900 text-[20px] mb-[10px]'>30K</li>
-            <li className='text-[9px] font-medium tracking-tighter'>Daily Transactions</li>
+            <li className='value'>30K</li>
+            <li className='value-base'>Daily Transactions</li>
           </ul>
           <ul className='text-center'>
-            <li className='font-black text-emerald-900 text-[20px] mb-[10px]'>10+</li>
-            <li className='text-[9px] font-medium tracking-tighter'>Countries serviced</li>
+            <li className='value'>10+</li>
+            <li className='value-base'>Countries serviced</li>
           </ul>
         </ul>
       </div>
@@ -137,25 +137,25 @@ function AboutPage() {
         <p className='text-xs w-96 text-center p-2 font-medium'>Highlighting Our Milestones And Major Accomplishments</p>
       </div>
       <div className='flex flex-col m-4 justify-center'>
-        <div className='rounded-lg p-3 mb-12 shadow-[0_3px_0_0] shadow-neutral-300'>
-          <p className='text-sm font-bold text-neutral-800'>Patricia was born</p>
-          <p className='text-[11px] text-neutral-800 font-medium'>Patricia was founded on August 16th, 2017, and started its first transactions on Whatsapp</p>
+        <div className='milestones'>
+          <p className='milestones-head'>Patricia was born</p>
+          <p className='milestones-content'>Patricia was founded on August 16th, 2017, and started its first transactions on Whatsapp</p>
         </div>
-        <div className='rounded-lg p-3 mb-12 shadow-[0_3px_0_0] shadow-neutral-300'>
-          <p className='text-sm font-bold text-neutral-800'>First website launch</p>
-          <p className='text-[11px] text-neutral-800 font-medium'>Patricia launched her first website, November 20th, 2018.</p>
+        <div className='milestones'>
+          <p className='milestones-head'>First website launch</p>
+          <p className='milestones-content'>Patricia launched her first website, November 20th, 2018.</p>
         </div>
-        <div className='rounded-lg p-3 mb-12 shadow-[0_3px_0_0] shadow-neutral-300'>
-          <p className='text-sm font-bold text-neutral-800'>First 1000 daily transactions</p>
-          <p className='text-[11px] text-neutral-800 font-medium'>Hit her first 1,000 daily transactions on May 2nd, 2019</p>
+        <div className='milestones'>
+          <p className='milestones-head'>First 1000 daily transactions</p>
+          <p className='milestones-content'>Hit her first 1,000 daily transactions on May 2nd, 2019</p>
         </div>
-        <div className='rounded-lg p-3 mb-12 shadow-[0_3px_0_0] shadow-neutral-300'>
-          <p className='text-sm font-bold text-neutral-800'>First App Launch</p>
-          <p className='text-[11px] text-neutral-800 font-medium'>Patricia launched her first App, March 1st, 2020. Giving her users an easier and accessible platform</p>
+        <div className='milestones'>
+          <p className='milestones-head'>First App Launch</p>
+          <p className='milestones-content'>Patricia launched her first App, March 1st, 2020. Giving her users an easier and accessible platform</p>
         </div>
-        <div className='rounded-lg p-3 mb-12 shadow-[0_3px_0_0] shadow-neutral-300'>
-          <p className='text-sm font-bold text-neutral-800'>African Challenger Brands Top 20</p>
-          <p className='text-[11px] text-neutral-800 font-medium'>One of the top 20 brands shaking up existing business categories in Africa.</p>
+        <div className='milestones'>
+          <p className='milestones-head'>African Challenger Brands Top 20</p>
+          <p className='milestones-content'>One of the top 20 brands shaking up existing business categories in Africa.</p>
         </div>
       </div>
       <div className='bg-teal-800 p-6 text-xs leading-loose'>
@@ -185,70 +185,70 @@ function AboutPage() {
       </div>
         <p className='text-center font-extrabold text-[30px] mt-[15px] mb-[10px] text-neutral-800'>Our Departments</p>
       <div className='m-5 p-4'>
-        <div className='rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300'>
-          <img src={Product} alt='Product Department' className='w-[40px] mb-[20px]'></img>
-          <p className='text-[20px] font-bold text-neutral-700 mb-[10px]'>Product</p>
-          <p className='text-xs leading-relaxed text-neutral-600 font-medium'>The Product Managers, Designers and Data Analysis are a team of awesome minds who constantly build Patricia into the brand that is made for you.</p>
+        <div className='headline-body'>
+          <img src={Product} alt='Product Department' className='img-style'></img>
+          <p className='headline'>Product</p>
+          <p className='headline-content'>The Product Managers, Designers and Data Analysis are a team of awesome minds who constantly build Patricia into the brand that is made for you.</p>
         </div>
-        <div className='rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300'>
-          <img src={HR} alt='Human Resources' className='w-[40px] mb-[20px]'></img>
-          <p className='text-[20px] font-bold text-neutral-700 mb-[10px]'>Human Resources</p>
-          <p className='text-xs leading-relaxed font-medium text-neutral-600'>It's up to us to make people feel at home. Whether working in the office, remotely, or their very own bat cave. We work to attract smart, passionate, humble people and continually improve the employee experience at Patricia.</p>
+        <div className='headline-body'>
+          <img src={HR} alt='Human Resources' className='img-style'></img>
+          <p className='headline'>Human Resources</p>
+          <p className='headline-content'>It's up to us to make people feel at home. Whether working in the office, remotely, or their very own bat cave. We work to attract smart, passionate, humble people and continually improve the employee experience at Patricia.</p>
         </div>
-        <div className='rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300'>
-          <img src={Marketing} alt='Marketing' className='w-[40px] mb-[20px]'></img>
-          <p className='text-[20px] font-bold text-neutral-700 mb-[10px]'>Marketing</p>
-          <p className='text-xs leading-relaxed text-neutral-600 font-medium'>With a top-notch strategy of market trends, customer needs, the competitive landscape and creativity, the marketing department transforms Patricia into a lifestyle meant for everyone.</p>
+        <div className='headline-body'>
+          <img src={Marketing} alt='Marketing' className='img-style'></img>
+          <p className='headline'>Marketing</p>
+          <p className='headline-content'>With a top-notch strategy of market trends, customer needs, the competitive landscape and creativity, the marketing department transforms Patricia into a lifestyle meant for everyone.</p>
         </div>
-        <div className='rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300'>
-          <img src={Engineering} alt='Engineering' className='w-[40px] mb-[20px]'></img>
-          <p className='text-[20px] font-bold text-neutral-700 mb-[10px]'>Engineering</p>
-          <p className='text-xs leading-relaxed text-neutral-600 font-medium'>We build the technological backbone of the business and empower other teams to thrive. From data engineering to machine learning, we bring the tech skills that turn Patricia's "out of the box" ideas into reality.</p>
+        <div className='headline-body'>
+          <img src={Engineering} alt='Engineering' className='img-style'></img>
+          <p className='headline'>Engineering</p>
+          <p className='headline-content'>We build the technological backbone of the business and empower other teams to thrive. From data engineering to machine learning, we bring the tech skills that turn Patricia's "out of the box" ideas into reality.</p>
         </div>
-        <div className='rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300'>
-          <img src={CE} alt='Customer Experience' className='w-[40px] mb-[20px]'></img>
-          <p className='text-[20px] font-bold text-neutral-700 mb-[10px]'>Customer Experience</p>
-          <p className='text-xs leading-relaxed text-neutral-600 font-medium'>We have just one rule, when our customers succeed, so do we, it's as simple as that. Patricia's customers never have to bat an eye when it comes to their needs as they are always met.</p>
+        <div className='headline-body'>
+          <img src={CE} alt='Customer Experience' className='img-style'></img>
+          <p className='headline'>Customer Experience</p>
+          <p className='headline-content'>We have just one rule, when our customers succeed, so do we, it's as simple as that. Patricia's customers never have to bat an eye when it comes to their needs as they are always met.</p>
         </div>
-        <div className='rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300'>
-          <img src={Admin} alt='Administration' className='w-[40px] mb-[20px]'></img>
-          <p className='text-[20px] font-bold text-neutral-700 mb-[10px]'>Administration</p>
-          <p className='text-xs leading-relaxed text-neutral-600 font-medium'>A group of awesome people in charge of making the dream that is the Patricia's workspace come to life, whether it be swapping a desk for he treadmill or building a new meeting room, we make it happen.</p>
+        <div className='headline-body'>
+          <img src={Admin} alt='Administration' className='img-style'></img>
+          <p className='headline'>Administration</p>
+          <p className='headline-content'>A group of awesome people in charge of making the dream that is the Patricia's workspace come to life, whether it be swapping a desk for he treadmill or building a new meeting room, we make it happen.</p>
         </div>
-        <div className='rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300'>
-          <img src={Sales} alt='Sales' className='w-[40px] mb-[20px]'></img>
-          <p className='text-[20px] font-bold text-neutral-700 mb-[10px]'>Sales</p>
-          <p className='text-xs leading-relaxed text-neutral-600 font-medium'>A team of astounding people whose expertise in customer relationship management is top notch. We manage and track daily customer sales transactions and trade performance.</p>
+        <div className='headline-body'>
+          <img src={Sales} alt='Sales' className='img-style'></img>
+          <p className='headline'>Sales</p>
+          <p className='headline-content'>A team of astounding people whose expertise in customer relationship management is top notch. We manage and track daily customer sales transactions and trade performance.</p>
         </div>
-        <div className='rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300'>
-          <img src={Finance} alt='Finance' className='w-[40px] mb-[20px]'></img>
-          <p className='text-[20px] font-bold text-neutral-700 mb-[10px]'>Finance</p>
-          <p className='text-xs leading-relaxed text-neutral-600 font-medium'>We run the numbers like a mathematically minded Benjamin Banneker, we take Patricia's numbers through financial planning, forecasting, analysis and reporting.</p>
+        <div className='headline-body'>
+          <img src={Finance} alt='Finance' className='img-style'></img>
+          <p className='headline'>Finance</p>
+          <p className='headline-content'>We run the numbers like a mathematically minded Benjamin Banneker, we take Patricia's numbers through financial planning, forecasting, analysis and reporting.</p>
         </div>
-        <div className='rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300'>
-          <img src={QA} alt='Quality Assurance' className='w-[40px] mb-[20px]'></img>
-          <p className='text-[20px] font-bold text-neutral-700 mb-[10px]'>Quality Assurance</p>
-          <p className='text-xs leading-relaxed text-neutral-600 font-medium'>Anytime you get that 'wow' moment while using a Patricia product, know that there is a combination of people who love to ensure that our services meet and surpass the expectations of our customers. This is the Quality Assurance team.</p>
+        <div className='headline-body'>
+          <img src={QA} alt='Quality Assurance' className='img-style'></img>
+          <p className='headline'>Quality Assurance</p>
+          <p className='headline-content'>Anytime you get that 'wow' moment while using a Patricia product, know that there is a combination of people who love to ensure that our services meet and surpass the expectations of our customers. This is the Quality Assurance team.</p>
         </div>
-        <div className='rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300'>
-          <img src={SP} alt='SCRUM and Productivity' className='w-[40px] mb-[20px]'></img>
-          <p className='text-[20px] font-bold text-neutral-700 mb-[10px]'>SCRUM and Productivity</p>
-          <p className='text-xs leading-relaxed text-neutral-600 font-medium'>We are your go-to persons for applying scrum to produce high-quality, timely work.</p>
+        <div className='headline-body'>
+          <img src={SP} alt='SCRUM and Productivity' className='img-style'></img>
+          <p className='headline'>SCRUM and Productivity</p>
+          <p className='headline-content'>We are your go-to persons for applying scrum to produce high-quality, timely work.</p>
         </div>
-        <div className='rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300'>
-          <img src={Compliance} alt='Compliance' className='w-[40px] mb-[20px]'></img>
-          <p className='text-[20px] font-bold text-neutral-700 mb-[10px]'>Compliance</p>
-          <p className='text-xs leading-relaxed text-neutral-600 font-medium'>A team of great individuals whose eagle eyes are constantly focused on the operations of the company and are always ready to spring to action to either correct anomalies or defend the company where necessary.</p>
+        <div className='headline-body'>
+          <img src={Compliance} alt='Compliance' className='img-style'></img>
+          <p className='headline'>Compliance</p>
+          <p className='headline-content'>A team of great individuals whose eagle eyes are constantly focused on the operations of the company and are always ready to spring to action to either correct anomalies or defend the company where necessary.</p>
         </div>
-        <div className='rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300'>
-          <img src={Payment} alt='Payment' className='w-[40px] mb-[20px]'></img>
-          <p className='text-[20px] font-bold text-neutral-700 mb-[10px]'>Payment</p>
-          <p className='text-xs leading-relaxed text-neutral-600 font-medium'>We are the face of financial transactions at Patricia, leveraging on the use of cutting-edge technologies to ensure swift payments, settlement and reconciliation.</p>
+        <div className='headline-body'>
+          <img src={Payment} alt='Payment' className='img-style'></img>
+          <p className='headline'>Payment</p>
+          <p className='headline-content'>We are the face of financial transactions at Patricia, leveraging on the use of cutting-edge technologies to ensure swift payments, settlement and reconciliation.</p>
         </div>
       </div>
       <div className='text-center p-2 mb-[100px]'>
         <p className='text-[40px] font-extrabold text-neutral-800'>Patrician's Thoughts</p>
-        <p className='text-xs text-neutral-500 mt-[10px] font-medium'>Short stories of what it is to be a part of the Patricia team.</p>
+        <p className='headline-content'>Short stories of what it is to be a part of the Patricia team.</p>
       </div>
       <div className='bg-orange-100 text-center m-3 p-6 rounded-xl'>
         <p className='text-[35px] font-extrabold text-neutral-800'>Want To Be A Magician?</p>
