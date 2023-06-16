@@ -20,7 +20,8 @@ import Payment from '../assets/Department_Icons_Payment_-.svg';
 import Star from '../assets/yellow-star.avif';
 import { Link } from 'react-router-dom';
 import Hanu from '../assets/HANU_FEJIRO_AGBODJE.webp';
-
+import Icon from '../assets/icon-decorated.svg';
+import Badge from '../assets/yellow-badge.png';
 
 function AboutPage() {
   const openNavMenu = () => {  
@@ -40,7 +41,7 @@ function AboutPage() {
   }
   return (
     <div className="main-about-page">
-      <div className='bg-[url(./assets/about-background.jpg)] relative z-[1] h-[70vh] w-[100%]'>
+      <div className='bg-[url(./assets/about-background.jpg)] relative z-[1] h-[100vh] w-[100%]'>
         
       <header className=''>
            <div className='flex justify-between p-4 text-black'>
@@ -81,37 +82,50 @@ function AboutPage() {
                    <a href="#"><li className='nav-menu-link'>Careers</li></a>
                 </ul>
                <div className='mt-[5%] text-[8px]'>
-               <div className='btn border mb-2 w-fit p-2 text-green-600'><a href="#"> <button>Sign In</button></a></div>
+               <div className='btn border mb-2 w-fit p-2 text-green-600'>
+                <Link to="./login"><button>Sign In</button></Link>
+                </div>
                <div className='btn bg-yellow-500 w-fit p-2'><a href="#"> <button>Create Account</button></a></div>
                </div>
             </nav>
         </header>
 
-        <p className=' text-center font-bold text-4xl m-auto text-neutral-800 pb-6'>Meet the Magicians</p>
-        <div className='flex justify-center relative -z-[2] mb-[70px]'>
-          <img src={TeamImg} alt='patricia team' className='w-[90%] border-8 rounded-xl border-blue-200'></img>
+        <p className=' text-center font-bold text-4xl sm:text-[40px] m-auto text-neutral-800 pb-6'>Meet the Magicians</p>
+        <div className='flex justify-center'>
+          <div className='relative -z-[2] mb-[70px]'>
+            <img src={TeamImg} alt='patricia team' className=' object-cover w-[100%] border-8 rounded-[40px] border-blue-200'></img>
+          </div>
         </div>
-        <div className='Description bg-teal-800 h-56 w-[100%] text-white p-6 sm:-z-[2] sm:top-[350px] absolute -z-[2] top-[260px]'>
-          <h3 className='w-[50%] font-black text-3xl'>Who are Patricians?</h3>
-          <p className='text-[10px] pt-3 pb-3'>We're a bunch of misfits who believe that crypto can be simplified into its easiest form. Together, we have created a really interesting place to work. From our lollipop moments to our ambiance and work ethics that encourage growth, Patricia has the best company culture style in Africa.</p>
+        <div className='Description bg-teal-800 h-auto lg:h-[50vh] w-[100%] text-white p-4 sm:-z-[2] absolute -z-[2] top-[481px] lg:top-[350px]'>
+          <div className='sm:grid grid-cols-12'>
+            <div className='lg:mt-[5rem] lg:pl-[0.5rem] sm:w-[100%] sm:grid col-span-6'>
+              <h3 className='font-black text-3xl lg:text-[45px] sm:text-4xl'>Who are Patricians?</h3>
+              <p className='text-[10px] pt-3 pb-3 lg:text-[14px] sm:text-[12px]'>We're a bunch of misfits who believe that crypto can be simplified into its easiest form. Together, we have created a really interesting place to work. From our lollipop moments to our ambiance and work ethics that encourage growth, Patricia has the best company culture style in Africa.</p>
+            </div>
+            <img src={Icon} alt="patricia-icon" className="hidden lg:ml-[8rem] lg:mt-[3rem] sm:grid col-span-6 sm:pt-6 pl-10 sm:ml-10"></img>
+          </div>
         </div>
       </div>
-      <div className='p-12'>
-        <img src={MediaImg} alt='about media' className='mt-[180px]'></img>
+      <div className='md:pr-[8rem] md:pl-[8rem] pt-[2rem] pr-[3rem] pl-[3rem] lg:pl-[13rem] lg:pr-[13rem]'>
+        <img src={MediaImg} alt='about media' className='mt-[300px] lg:mt-[150px]'></img>
       </div>
       <div className='sm:grid grid-cols-12'>
-        <div className='mt-10 text-center sm:col-span-6 sm:text-left sm:pl-4'>
-          <h2 className='font-extrabold text-neutral-800 sm:text-4xl text-3xl mb-3'>Our History</h2>
-          <p className='font-medium text-[12px] sm:text-[15px]'>Take a Walk With Us Down Memory Lane.</p>
+        <div className='mt-10 text-center sm:col-span-5 sm:text-left sm:pl-4'>
+          <h2 className='font-extrabold text-neutral-800 text-3xl sm:text-4xl mb-3 lg:mb-5 lg:text-[40px]'>Our History</h2>
+          <p className='font-medium text-[12px] sm:text-[15px] tracking-tighter lg:text-[20px] lg:font-normal'>Take a Walk With Us Down Memory Lane.</p>
         </div>
         <div className='sm:col-span-6 sm:p-4'>
-          <div className='flex justify-center pl-4'>
-            <div className='bg-neutral-200 mt-5 w-72 h-12 text-[13px] p-1 flex justify-between rounded-lg font-medium '>
-              <p className='w-40 rounded-lg pt-2 bg-white text-emerald-800 text-center'>What we have done</p>
-              <p className='text-center pr-2 pt-2 text-slate-400'>Where we are</p>
+          <div className='flex justify-center pl-4 sm:flex sm:justify-start sm:pl-4'>
+            <div className='bg-neutral-200 mt-5 w-[300px] lg:w-[350px] h-14 text-[13px] p-1 flex justify-between rounded-lg font-medium sm:text-[13px] lg:text-[18px]'>
+              <div className='w-40 lg:w-48 rounded-lg bg-white'>
+                <p className='text-center mt-4 text-emerald-800'>What we have done</p>
+              </div>
+              <div className='pt-4 pr-4'>
+                <p className='text-slate-400'>Where we are</p>
+              </div>
             </div>
           </div>
-          <p className='font-medium text-xs p-10 mb-10'>We don't mean to brag, but we only take giant strides here. Led by our multi-award winning CEO & Founder, we've moved from: 2 to 350+ employees, 1 to 8+ locations, and 5k to 30k+ daily transactions. We launched Africa's first and only Bitcoin Debit card, bagged 5 different awards and was named Fourth Canvas' African Challenger Brands Top 20, all in four years.</p>
+          <p className='font-medium text-xs p-10 mb-10 mt-5 sm:p-4 tracking-tighter leading-6 lg:text-[16px] sm:text-[14px]'>We don't mean to brag, but we only take giant strides here. Led by our multi-award winning CEO & Founder, we've moved from: 2 to 350+ employees, 1 to 8+ locations, and 5k to 30k+ daily transactions. We launched Africa's first and only Bitcoin Debit card, bagged 5 different awards and was named Fourth Canvas' African Challenger Brands Top 20, all in four years.</p>
         </div>
       </div>
       <div className='bg-pink-100'>
@@ -134,46 +148,55 @@ function AboutPage() {
           </ul>
         </ul>
       </div>
-      <div className='mt-10 flex justify-center'>
+      <div className='journey mt-10 p-6'>
         <img src={Ship} alt='journey-ship'></img>
       </div>
-      <div className='flex justify-center'>
-        <p className='font-extrabold text-neutral-800 text-3xl w-[75%] text-center p-2'>Our Journey So Far</p>
+      <div className=''>
+        <div className=''>
+          <div className='journey'>
+            <p className='font-extrabold text-neutral-800 text-3xl w-[100%] sm:text-left sm:pl-4 sm:text-[36px] text-center p-2'>Our Journey So Far</p>
+          </div>
+          <div className='journey'>
+            <p className='text-xs w-96 text-center p-2 font-medium tracking-tighter sm:text-[13px] sm:mb-[8rem]'>Highlighting Our Milestones And Major Accomplishments</p>
+          </div>
+        </div>
+        <div className='w-[25%] hidden lg:visible'>
+          <img src={Badge} alt="badge"></img>
+        </div>
       </div>
-      <div className='flex justify-center'>
-        <p className='text-xs w-96 text-center p-2 font-medium'>Highlighting Our Milestones And Major Accomplishments</p>
-      </div>
-      <div className='flex flex-col m-4 justify-center'>
-        <div className='milestones'>
-          <p className='milestones-head'>Patricia was born</p>
-          <p className='milestones-content'>Patricia was founded on August 16th, 2017, and started its first transactions on Whatsapp</p>
-        </div>
-        <div className='milestones'>
-          <p className='milestones-head'>First website launch</p>
-          <p className='milestones-content'>Patricia launched her first website, November 20th, 2018.</p>
-        </div>
-        <div className='milestones'>
-          <p className='milestones-head'>First 1000 daily transactions</p>
-          <p className='milestones-content'>Hit her first 1,000 daily transactions on May 2nd, 2019</p>
-        </div>
-        <div className='milestones'>
-          <p className='milestones-head'>First App Launch</p>
-          <p className='milestones-content'>Patricia launched her first App, March 1st, 2020. Giving her users an easier and accessible platform</p>
-        </div>
-        <div className='milestones'>
-          <p className='milestones-head'>African Challenger Brands Top 20</p>
-          <p className='milestones-content'>One of the top 20 brands shaking up existing business categories in Africa.</p>
+      <div className='sm:hidden'>
+        <div className='flex flex-col m-4 justify-center'>
+          <div className='milestones'>
+            <p className='milestones-head'>Patricia was born</p>
+            <p className='milestones-content'>Patricia was founded on August 16th, 2017, and started its first transactions on Whatsapp</p>
+          </div>
+          <div className='milestones'>
+            <p className='milestones-head'>First website launch</p>
+            <p className='milestones-content'>Patricia launched her first website, November 20th, 2018.</p>
+          </div>
+          <div className='milestones'>
+            <p className='milestones-head'>First 1000 daily transactions</p>
+            <p className='milestones-content'>Hit her first 1,000 daily transactions on May 2nd, 2019</p>
+          </div>
+          <div className='milestones'>
+            <p className='milestones-head'>First App Launch</p>
+            <p className='milestones-content'>Patricia launched her first App, March 1st, 2020. Giving her users an easier and accessible platform</p>
+          </div>
+          <div className='milestones'>
+            <p className='milestones-head'>African Challenger Brands Top 20</p>
+            <p className='milestones-content'>One of the top 20 brands shaking up existing business categories in Africa.</p>
+          </div>
         </div>
       </div>
       <div className='bg-teal-800 text-xs'>
         <div className="sm:grid grid-cols-12">
           <img src={Hanu} className='hidden object-cover h-[100vh] w-[100%] sm:grid col-span-4' alt='ceo'></img>
-          <div className='p-6 sm:col-span-8'>
-            <p className='text-white text-[50px] mt-[40px] mb-[20px] opacity-30'>"</p>
-            <p className='text-white leading-8'>"There is a lot of chatter around Crypto but not enough people are adopting it as fast as it should be why? The idea of Crypto is still complex, it's almost as if it is reserved for a select few. This is where Patricia finds a purpose, our purpose is to make Crypto easy for mankind. Harnessing and pushing the intrinsic power of Blockchain Technology to the moon. Creating a new and sustainable path for the present and future generations".</p>
-            <div className='ceo-footer bg-teal-100 rounded-xl mt-10 p-5 w-[220px] h-[80px] text-[12px] leading-relaxed sm:w-[300px]'>
-              <p className='ceo-name text-emerald-900 ml-[20px] font-medium sm:text-[20px]'>Hanu Fejiro Agbodje</p>
-              <p className='font-extrabold ml-[20px]'>CEO, Patricia</p>
+          <div className='p-6 sm:col-span-8 lg:mt-[50px] lg:ml-[30px]'>
+            <p className='text-white text-[50px] lg:text-[100px] mt-[40px] mb-[20px] opacity-30'>"</p>
+            <p className='text-white leading-8 lg:text-[16px] lg:leading-9'>"There is a lot of chatter around Crypto but not enough people are adopting it as fast as it should be why? The idea of Crypto is still complex, it's almost as if it is reserved for a select few. This is where Patricia finds a purpose, our purpose is to make Crypto easy for mankind. Harnessing and pushing the intrinsic power of Blockchain Technology to the moon. Creating a new and sustainable path for the present and future generations".</p>
+            <div className='ceo-footer bg-teal-100 rounded-[15px] mt-10 p-5 w-[220px] h-[80px] text-[12px] leading-relaxed sm:w-[300px] lg:w-[350px] lg:h-[100px]'>
+              <p className='ceo-name text-emerald-900 ml-[20px] font-medium sm:text-[20px] lg:text-[25px] '>Hanu Fejiro Agbodje</p>
+              <p className='font-extrabold ml-[20px] lg:text-[15px] lg:font-bold'>CEO, Patricia</p>
             </div>
           </div>
         </div>
@@ -195,8 +218,8 @@ function AboutPage() {
           </div>
         </div>
       </div>
-        <p className='text-center font-extrabold text-[30px] mt-[15px] mb-[10px] text-neutral-800 sm:text-[40px]'>Our Departments</p>
-      <div className='m-5 p-4'>
+      <p className='text-center font-extrabold text-[30px] mt-[15px] mb-[10px] text-neutral-800 sm:text-[40px]'>Our Departments</p>
+      <div className='m-5 p-4 sm:p-10 sm:m-10 lg:flex flex-wrap'>
         <div className='headline-body'>
           <img src={Product} alt='Product Department' className='img-style'></img>
           <p className='headline'>Product</p>
@@ -267,16 +290,18 @@ function AboutPage() {
         </div>
         <p className='headline-content'>Short stories of what it is to be a part of the Patricia team.</p>
       </div>
-      <div className='flex justify-center w-[100%]'>
-        <div className='bg-orange-100 shadow-lg shadow-neutral-200 text-center m-3 p-6 rounded-xl'>
-          <p className='text-[30px] font-extrabold text-neutral-800 sm:text-[40px]'>Want To Be A Magician?</p>
-          <p className='text-gray-400 text-[11px] font-medium mt-[5px] mb-[5px] leading-loose sm:text-[13px]'>Is your superpower creaing amazing ideas and bringing them to reality? Patricia is the perfect home for you. Let's make magic together.</p>
-          <button className='btn bg-yellow-300 p-2 px-8 py-3 text-xs font-medium mt-2 sm:text-[14px]'>Join our team</button>
+      <div className='sm:p-[6rem]'>
+        <div className='flex justify-center w-[100%]'>
+          <div className='bg-orange-100 shadow-lg shadow-neutral-200 text-center m-3 p-6 sm:p-10 rounded-xl'>
+            <p className='text-[30px] font-extrabold text-neutral-800 sm:text-[40px]'>Want To Be A Magician?</p>
+            <p className='text-gray-400 text-[11px] font-medium mt-[5px] mb-[5px] leading-loose sm:text-[13px]'>Is your superpower creaing amazing ideas and bringing them to reality? Patricia is the perfect home for you. Let's make magic together.</p>
+            <button className='btn bg-yellow-300 p-2 px-8 py-3 text-xs font-medium mt-2 sm:text-[14px]'>Join our team</button>
+          </div>
         </div>
-      </div>
-      <div className='mb-[40px]'>
-        <div className='relative bg-slate-200 w-[85%] m-auto shadow-sm shadow-neutral-200 h-[35px] -mt-10 -z-10 rounded-lg'></div>
-        <div className='relative bg-slate-300 w-[80%] m-auto h-[49px] -mt-10 -z-20 rounded-lg'></div>
+        <div className='mb-[40px]'>
+          <div className='relative bg-slate-200 w-[85%] lg:w-[82%] m-auto shadow-sm shadow-neutral-200 h-[35px] -mt-10 -z-10 rounded-lg'></div>
+          <div className='relative bg-slate-300 w-[80%] m-auto h-[49px] -mt-10 -z-20 rounded-lg'></div>
+        </div>
       </div>
     </div>
   )

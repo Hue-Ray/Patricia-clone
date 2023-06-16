@@ -60,7 +60,7 @@
     }
 
     .headline-body{
-        @apply rounded-[30px] p-6 mb-12 shadow-lg shadow-neutral-300
+        @apply rounded-[30px] p-6 mb-12 h-[56vh] shadow-lg shadow-neutral-300 lg:w-[46%] lg:m-4 xl:w-[30%]
     }
 
     .headline{
@@ -84,14 +84,18 @@
     }
 
     .value{
-        @apply font-black text-emerald-900 text-[20px] mb-[10px] 
+        @apply font-black text-emerald-800 text-[20px] mb-[10px] sm:text-[40px] tracking-tighter
     }
     
     .value-base{
-        @apply text-[9px] font-medium tracking-tighter
+        @apply text-[9px] font-normal tracking-tighter sm:text-[15px]
     }
 
     .img-style{
         @apply w-[40px] mb-[20px]
+    }
+    
+    .journey{
+        @apply flex justify-center sm:justify-start
     }
 }
